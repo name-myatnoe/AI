@@ -2,9 +2,9 @@ import streamlit as st
 import joblib
 
 st.title('Will you like to predict whether you have diabetes or not?')
-diabetes_LR_Model = joblib.load("/Diabetes_prediction/diabetes_model.pkl")
+diabetes_LR_Model = joblib.load("diabetes_model.pkl")
 
-image = '/Diabetes_prediction/diabetes.jpg'
+image = 'diabetes.jpg'
 st.image(image, caption='Image from https://www.health.harvard.edu/blog/good-news-for-those-with-type-2-diabetes-healthy-lifestyle-matters-2020021718827')
 name = st.text_input('Enter your name', '')
 
